@@ -3,7 +3,8 @@
 *   add `UdpTransportOptions::reorder` to put RTP packets that arrive out of
     order over UDP back in sequence, rather than dropping them. A packet
     held behind a missing one is released after a bounded number of packets
-    or a bounded delay.
+    or a bounded delay, and `UdpTransportOptions::reorder_max_bytes` can
+    bound the bytes held too.
 
 ## `v0.4.22` (2026-11-11)
 
